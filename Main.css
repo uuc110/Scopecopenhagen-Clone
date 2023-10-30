@@ -1,5 +1,73 @@
+/*Importing fonts from the local folder "It is done this way ⬇️"*/
+@import "Assets/Fonts";
+@font-face {
+    font-family: 'GothamLight';
+    src: url("Assets/Fonts/GothamLight.ttf") format("truetype");
+    /*format = true-type -> mean ttf -> truetypeformate , mean whatever the data is written in the font file will be taken from it. ex. if the font file is GothamBold.tff then in this file it will automatically know the font weight is something greater than >600 Hope you get the idea.*/
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url("Assets/Fonts/GothamBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBoldItalic';
+    src: url("Assets/Fonts/GothamBoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url("Assets/Fonts/GothamBook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBookItalic';
+    src: url("Assets/Fonts/GothamBookItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamLightItalic';
+    src: url("Assets/Fonts/GothamLightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url("Assets/Fonts/GothamMedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMedium_1';
+    src: url("Assets/Fonts/GothamMedium_1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMediumItalic';
+    src: url("Assets/Fonts/GothamMediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
+
 
 
 - Font sizes (px)
@@ -16,11 +84,11 @@
 
 --- 02 COLORS
 
-- Primary: 
+- Primary: 2c2b2b (H1 heading)
 - Tints:
-- Shades: 
+- Shades: f1f1f1 (BBackground)
 - Accents:
-- Greys
+- Greys: 353a3d (don't know where is used 🤷)
 
 --- 05 SHADOWS
 
@@ -32,3 +100,50 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*font-size: 10px;*/
+    /*10px /16px = 0.625 = 62.5%*/
+    /*Percentage of user's browser font-size setting*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    padding: 0 1.6rem;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    background: #f1f1f1;
+    margin: 0 auto;
+}
+
+
+.primary_heading{
+    font-family: "Gotham", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #2c2b2b;
+    margin: 9.6rem 4.8rem;
+    text-align: center;
+}
+
+
+.gallary{
+    display: flex;
+    margin: 14.4rem 0;
+}
+
+/*Using ID for apply css individually*/
+
+#img1{
+    height: 76rem;
+}
+
