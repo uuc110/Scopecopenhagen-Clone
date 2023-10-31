@@ -95,6 +95,7 @@
 --- 06 BORDER-RADIUS
 
 --- 07 WHITESPACE
+    48 px or 4.8rem is used for the margin, so when next section is added it will be 48px away from the previous section.
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
