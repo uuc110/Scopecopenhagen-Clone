@@ -9,9 +9,9 @@
 <body>
 
     <section class="nav" id="navbar">
-        <div class="logo">
+        <div class="logo scroll">
            <a href="https://scopecopenhagen.com/">
-            <img src="./Assets/images/logo.png" alt="Logo">
+            <img src="./Assets/images/MainLogo.svg" alt="Logo">
            </a> 
             <div class="logo-name">SCOPE COPENHAGEN</div>
         </div>
@@ -21,24 +21,43 @@
                 <li><a href="#">PROJECTS</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li id="soon"><a href="#">JOURNAL</a><span>SOON</span></li>
-                <li id="soon"><a href="#">STORE</a><span>SOON</span></li>
+                <li id="soon1"><a href="#">STORE</a><span>SOON</span></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
+        </div>
     </section>
 
     <section class="hero_section">
         <div class="primary_heading">
             <!--I can fix this, using CSS Soft wrap something like that-->
-            <h1>WHAT WE DO MIGHT SEEM SIMPLE.</h1>
-            <h1>BUT ONLY AT FIRST GLANCE.</h1>
+            <div class="hero-head">WHAT WE DO MIGHT SEEM SIMPLE.</div>
+            <div class="hero-head">BUT ONLY AT FIRST GLANCE.</div>
             <!--This part-->
         </div>
         <div class="gallary">
-            <img id="img1" src="Assets/images/img2.jpg" alt="Image of Hall with sofas and vas on the table and book">
-            <img id="img2" src="Assets/images/img3.jpg" alt="Image of kitchen">
-            <img id="img3" src="Assets/images/img1.jpg" alt="Image of of bedroom">
+            <div class="img">
+                <img id="img1" src="Assets/images/img2.jpg" alt="Image of Hall with sofas and vas on the table and book">
+            </div>
+            <div class="img">
+                <img id="img2" src="Assets/images/img3.jpg" alt="Image of kitchen">
+            </div>
+            <div class="img">
+                <img id="img3" src="Assets/images/img1.jpg" alt="Image of of bedroom">
+            </div>
         </div>
     </section>
 
+<script>
+    "strict mode";
+        // JavaScript for adding/removing the 'scrolled' class
+        window.addEventListener("scroll", function() {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 0) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+    });
+    </script>
 </body>
 </html>

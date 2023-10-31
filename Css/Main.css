@@ -5,7 +5,7 @@
     src: url("Assets/Fonts/GothamLight.ttf") format("truetype");
     /*format = true-type -> mean ttf -> truetypeformate , mean whatever the data is written in the font file will be taken from it. ex. if the font file is GothamBold.tff then in this file it will automatically know the font weight is something greater than >600 Hope you get the idea.*/
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
