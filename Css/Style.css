@@ -37,9 +37,9 @@ body {
     width: 100%;
     background: rgb(241,241,241);
     border: none;
-    background: linear-gradient(180deg, rgba(241,241,241,1) 52%, rgba(207,207,207,0.23573179271708689) 100%);
+    /* background: linear-gradient(180deg, rgba(241,241,241,1) 52%, rgba(207,207,207,0.23573179271708689) 100%); */
     z-index: 100;
-    margin-bottom: 9.6rem;
+    /* margin-bottom: 9.6rem; */
 }
 
 #navbar.scrolled .scroll img {
@@ -131,12 +131,16 @@ body {
 
 /* *****HERO SECTION***** */
 
+.hero_section{
+    margin-top: 9rem;
+}
+
 .primary_heading{
     font-family: "GothamLight", sans-serif;
     /*font-weight: lighter;*/
     font-size: 3rem;
     color: #2c2b2b;
-    padding-bottom: 9.6rem;
+    padding-bottom: 14.4rem;
     text-align: center;
 }
 
@@ -148,38 +152,70 @@ body {
 
 .gallary{
     display: grid;
-    margin: 14.4rem 0;
     grid-template-columns: 35% 35% 30%; 
+    position: relative;
 
 }
 
 /*Using ID for apply css individually*/
 
-.img{
-    position:relative;
+.gallary .img{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.img1{
+    height: 85%;
+    width: 90%;
+}
+
+.img2{
+    margin-left: 15%;
+    margin-top: 28%;
+    height: 80%;
+    width: 85%;
+}
+
+.img3{
+    margin-top: 10%;
+    height: 40%;
 }
 
 #img1{
-    height: 93rem;
+    /* height: 93rem; */
+    width: 100%;
 }
 
 #img2{
-    height:89rem;
-    margin-top:18rem;
-    margin-left: 8rem;
+    width: 100%;
+    /* width: 70%; */
+    /* height:60%; */
 }
 
 #img3{
-    margin-top: 12rem;
-    margin-left: 29rem;
-    height: 40rem;
+    max-width: 100%;
+    /* height: 40rem;  */
+    align-items: flex-end;
+}
+
+/* *****PROJECTS SECTION***** */
+
+.container .secondary_heading{
+    margin-bottom: 14.4rem;
+}
+
+.onsite-img{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.onsite-img img{
+    width: 100%;
 }
 
 /*****FOOTER SECTION*****/
-
-.footer_section {
-    margin-top: 9.8rem;
-}
 
 .footer_heading{
     margin-bottom: 19.6rem;

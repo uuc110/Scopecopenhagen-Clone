@@ -104,17 +104,18 @@
 
 /*For section gap used by section Heading*/
 
+.container{
+    margin: 14.4rem 0;
+    max-width: 100%;
+}
+
 .secondary_heading {
-    /*margin: 9.8rem 0;*/
     font-size: 3.8rem;
     color: rgba(44, 43, 43, 0.92);
     font-family: "GothamBook", sans-serif;
     text-align: center;
     cursor: pointer;
     letter-spacing: 1px;
-    display: inline-block;
-    position: relative;
-    left: 45%;
     border-bottom: 1px solid rgba(44, 43, 43, 0.92);
     /*underline*/
     /*text-decoration: underline 1.2px rgba(44, 43, 43, 0.92) ;*/
@@ -124,6 +125,16 @@
         margin-left: 1.4rem;
         color: rgba(44, 43, 43, 0.95);
     }
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro{
+    margin-top: 14.4rem;
 }
 
 .footer_img{
