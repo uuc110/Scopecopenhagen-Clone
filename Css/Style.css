@@ -64,7 +64,6 @@ body {
 
 .logo-name{
     font-family: "GothamLight", sans-serif;
-    /*font-weight: 100;*/
     font-size: 1.4rem;
     letter-spacing: 6px;
     color: #2c2b2b;
@@ -104,26 +103,25 @@ body {
     padding: 2px 30px 2px 10px;
 }
 
-.menu li a:link{
-    text-decoration: none;
-    color: #2c2b2b;
-    /* padding: 2px 4px; */
-}
-
-.menu li a:visited{
+a:link{
     text-decoration: none;
     color: #2c2b2b;
 }
 
-.menu li a:active{
+a:visited{
+    text-decoration: none;
     color: #2c2b2b;
 }
 
-.menu li span{
+a:active{
+    color: #2c2b2b;
+}
+
+li span{
     font-size: 8px;
     letter-spacing: 0;
     background-color: #2c2b2b;
-    color: white;
+    color: #f1f1f1;
     padding-top: 1px;
     position: absolute;
     top: -3px;
@@ -220,6 +218,71 @@ body {
 .footer_heading{
     margin-bottom: 19.6rem;
 }
+
+.footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: end;
+}
+
+.footer_img{
+    height: 40%;
+    width: 40%;
+    margin-bottom: 38px;
+}
+
+.lists-footer{
+    position: relative;
+}
+
+#soon2{
+    position: absolute;
+    top: 3px;
+    left: 7.5rem;
+    cursor: pointer;
+}
+
+#soon3{
+    position: absolute;
+    top: 3px;
+    left: 5.5rem;
+    cursor: pointer;
+}
+
+.footer-list li{
+    list-style: none;
+}
+
+.lists-footer{
+    padding: 5px 0;
+}
+
+.lists-footer a{
+    padding: 1px 24px 1px 0;
+}
+
+.footer-first a{
+    color: #f1f1f1;
+    background-color: #2c2b2b;
+}
+
+.footer-list li a:hover{
+    color: #f1f1f1;
+    background-color: #2c2b2b;
+}
+
+.footer_reserved_line{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+  
+
+
+
 
 
 
